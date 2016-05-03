@@ -73,7 +73,7 @@ extern "C" {
 /*==================[macros]=================================================*/
 <?php
 /* get controllers */
-$controllers = $config->getList("/RTCS","StateFeedback");
+$controllers = $this->config->getList("/RTCS","StateFeedback");
 ?>
 /* Size of the controller list */
 #define CONTROLLERS_LIST_SIZE <?=count($controllers);?>

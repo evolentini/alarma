@@ -62,7 +62,7 @@
 /*==================[inclusions]=============================================*/
 #include "Rtcs_Internal.h"
 <?php
-$pdefs = $config->getList("/RTCS","INCLUDE_FILE");
+$pdefs = $this->config->getList("/RTCS","INCLUDE_FILE");
 $count = 1;
 foreach ($pdefs as $pdef)
 {
@@ -83,7 +83,7 @@ foreach ($pdefs as $pdef)
 /*==================[external data definition]===============================*/
 <?php
 /* get controllers */
-$controllers = $config->getList("/RTCS","StateFeedback");
+$controllers = $this->config->getList("/RTCS","StateFeedback");
 
 /* configuation loop for each controller */
 $count = 1;
